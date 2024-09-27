@@ -1,20 +1,43 @@
-// Split Even-Odds.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "intLinkedList.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+int main() {
+    intLinkedList list;
+    intLinkedList evensList, oddsList;
+    int num;
+
+    cout << "Enter integers ending with -999:" << endl;
+    cin >> num;
+
+    while (num != -999) {
+        list.insertLast(num);
+        cin >> num;
+    }
+
+    cout << "Original list: ";
+    for (auto it = list.begin(); it != list.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    // Split the list into evens and odds
+    list.splitEvensOddsList(evensList, oddsList);
+
+    // Display the even numbers list
+    cout << "evensList: ";
+    for (auto it = evensList.begin(); it != evensList.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    // Display the odd numbers list
+    cout << "oddsList: ";
+    for (auto it = oddsList.begin(); it != oddsList.end(); ++it) {
+        cout << *it << " ";
+    }
+    cout << endl;
+
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

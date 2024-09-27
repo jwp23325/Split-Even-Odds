@@ -1,16 +1,17 @@
-#ifndef H_IntLinkedList
-#define H_IntLinkedList
+#ifndef H_intLinkedList
+#define H_intLinkedList
 
 #include "unorderedLinkedList.h"
 
 class intLinkedList : public unorderedLinkedList<int> {
 public:
-    intLinkedList();  // Constructor
-    ~intLinkedList(); // Destructor
-
-    void addInt(int num);
-    void deleteInt(int num);
-    bool searchInt(int num) const;
-    void displayList() const;
+    void splitEvensOddsList(intLinkedList& evensList, intLinkedList& oddsList);
+    // Function to rearrange the nodes of the linked list so
+    // that evensList consists of even integers and oddsList
+    // consists of odd integers.
+    // Postcondition: evensList consists of even integers.
+    // oddsList consists of odd integers.
+    // The original list is empty.
 };
+
 #endif
