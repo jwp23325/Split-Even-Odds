@@ -1,5 +1,6 @@
 #ifndef H_UnorderedLinkedList
 #define H_UnorderedLinkedList
+
 #include "linkedList.h"
 using namespace std;
 template <class Type>

@@ -13,7 +13,4 @@ public:
     bool searchInt(int num) const;
     void displayList() const;
 };
-
 #endif
-
-
