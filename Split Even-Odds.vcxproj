@@ -131,9 +131,9 @@
     <ClCompile Include="Split Even-Odds.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Downloads\Linked Lists and Iterators\linkedList.h" />
-    <ClInclude Include="..\..\..\Downloads\Linked Lists and Iterators\unorderedLinkedList.h" />
     <ClInclude Include="intLinkedList.h" />
+    <ClInclude Include="linkedList.h" />
+    <ClInclude Include="unorderedLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

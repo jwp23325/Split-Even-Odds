@@ -5,6 +5,11 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Split Even-Odds", "Split Even-Odds.vcxproj", "{172060FD-2E08-400D-B59F-D43B3E522DC0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC80F220-B523-45EB-956C-4DFBFBE7F81C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\Linked Lists and Iterators\linkedList.h = ..\..\..\Downloads\Linked Lists and Iterators\linkedList.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
