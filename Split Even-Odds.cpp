@@ -1,3 +1,8 @@
+// This program allows the user to enter a series of integers,
+// ending with -999, and then splits these integers into two lists:
+// one containing even numbers and the other containing odd numbers.
+// Code outlined by ChatGPT and modified by the coder.
+
 #include <iostream>
 #include "intLinkedList.h"
 

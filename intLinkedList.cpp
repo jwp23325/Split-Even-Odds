@@ -1,3 +1,8 @@
+// Function to rearrange nodes into evensList and oddsList
+// Evens list consists of even integers; odds list consists of odd integers.
+// The original list is emptied after the split.
+// Code outlined by ChatGPT and modified by the coder.
+
 #include "intLinkedList.h"
 
 void intLinkedList::splitEvensOddsList(intLinkedList& evensList, intLinkedList& oddsList) {
