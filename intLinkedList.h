@@ -1,6 +1,4 @@
-#ifndef H_intLinkedList
-#define H_intLinkedList
-
+#pragma once
 #include "unorderedLinkedList.h"
 
 class intLinkedList : public unorderedLinkedList<int> {
@@ -13,5 +11,3 @@ public:
     // oddsList consists of odd integers.
     // The original list is empty.
 };
-
-#endif
